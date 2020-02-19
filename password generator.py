@@ -8,23 +8,27 @@ from random import randint
 
 
 password = ''
+while True:
+    print("type done when finished")
+    symbols_count = input("How many characters You want in Your password?: ")
+    if symbols_count == 'done':
+        break
+    else:
 
-symbols_count = int(input("How many characters You want in Your password?: "))
+     # 1- digit ; 2- small letter ; 3- capital letter ; 4- special symbol
 
-# 1- digit ; 2- small letter ; 3- capital letter ; 4- special symbol
+        for x in range(1, int(symbols_count) + 1):
+            kind = randint(1, 5)
+            if kind == 1:
+                password += str(randint(0, 10))
+            elif kind == 2:
+                password += string.ascii_lowercase[randint(
+                    1, len(string.ascii_lowercase))]
+            elif kind == 3:
+                password += string.ascii_uppercase[randint(
+                    1, len(string.ascii_uppercase))]
+            elif kind == 4:
+                password += string.punctuation[randint(
+                    1, len(string.punctuation))]
 
-
-for x in range(1, symbols_count + 1):
-    kind = randint(1, 5)
-    if kind == 1:
-        password += str(randint(0, 10))
-    elif kind == 2:
-        password += string.ascii_lowercase[randint(
-            1, len(string.ascii_lowercase))]
-    elif kind == 3:
-        password += string.ascii_uppercase[randint(
-            1, len(string.ascii_uppercase))]
-    elif kind == 4:
-        password += string.punctuation[randint(1, len(string.punctuation))]
-
-print(f"Your password: " + password)
+        print(f"Your password: " + password)
