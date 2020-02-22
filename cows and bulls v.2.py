@@ -2,13 +2,13 @@ from random import randint
 
 
 def index_collection(iterable):
-    touples = []
+    tuples = []
     step = -1
     for x in iterable:
-        touple = (x, step + 1)
-        touples.append(touple)
+        pair = (x, step + 1)
+        tuples.append(pair)
         step += 1
-    return touples
+    return tuples
 
 
 random_digits = ''
