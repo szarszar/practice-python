@@ -50,7 +50,6 @@ def cows_and_bulls(digits, check):
                     else:
                         bulls += 1
                         step += 1
-
     print(f"You have {cows} cows and {bulls} bulls")
 
 
