@@ -58,7 +58,10 @@ for x in range(1, 5):
     digit = randint(0, 9)
     random_digits += str(digit)
 
-while True:
+user_choice = ''
+while user_choice != random_digits:
     print(random_digits)
     user_choice = input("Try to guess 4 digit number: ")
     cows_and_bulls(random_digits, user_choice)
+else:
+    print("You've guessed it!")
