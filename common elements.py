@@ -25,5 +25,7 @@ for y in list_1:
         common.append(y)
 
 print(list_1, list_2)
+
 print('Common elements are:')
+
 print(common)

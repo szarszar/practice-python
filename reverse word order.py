@@ -9,6 +9,9 @@
 # shown back to me.
 
 sentance = input("Please write a message to reverse: ")
+
 words = sentance.split(' ')
+
 reversed_sentance = words[::-1]
+
 print(' '.join(reversed_sentance))

@@ -9,9 +9,15 @@
 # Ask the user for a number and return a list that contains only elements from the original list a that are smaller than that number given by the user.
 
 numbers = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+
 choice = int(input("Less than: "))
+
 less_than = []
+
+
 for x in numbers:
     if x < choice:
         less_than.append(x)
+
+
 print(less_than)

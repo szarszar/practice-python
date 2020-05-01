@@ -2,7 +2,10 @@
 
 
 word = input("word to check: ")
+
 reverse = word[::-1]
+
+
 if word == reverse:
     print(f'{word} is a palindrome')
 else:

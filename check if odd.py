@@ -9,7 +9,7 @@ number = int(input("Write a number from 1 to 100: "))
 if number in range(1, 100):
     if number % 2 != 0:
         print("Weird")
-    elif number in range(6,20):
+    elif number in range(6, 20):
         print("Weird")
     else:
         print("Not wierd")
